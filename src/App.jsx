@@ -143,8 +143,8 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#about" className="flex items-center gap-2 group">
-            <img src="/logo.svg" alt="MBB Logo" className="w-8 h-8 transition-transform group-hover:scale-105" />
-            <span className="font-bold text-xl tracking-tight text-white group-hover:text-blue-400 transition-colors">MBB.dev</span>
+            <img src="/logo.svg" alt="Dhairya Logo" className="w-8 h-8 transition-transform group-hover:scale-105" />
+            <span className="font-mono font-bold text-xl tracking-tight text-cyan-400 group-hover:text-white transition-colors">&lt;Dhairya/&gt;</span>
           </a>
 
           {/* Desktop links */}
