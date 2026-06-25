@@ -232,7 +232,7 @@ const App = () => {
           </div>
 
           {/* Terminal */}
-          <div className="bg-[#0d1117] rounded-xl border border-slate-800 shadow-2xl overflow-hidden font-mono text-sm">
+          <div className="bg-[#0d1117] rounded-xl border border-slate-800 shadow-2xl overflow-hidden font-mono text-xs sm:text-sm">
             <div className="bg-[#161b22] px-4 py-2 border-b border-slate-800 flex items-center gap-2">
               <div className="flex gap-1.5">
                 <div className="w-3 h-3 rounded-full bg-red-500/80" />
@@ -243,7 +243,7 @@ const App = () => {
                 <Terminal size={14} /> zsh — profile.js
               </span>
             </div>
-            <div className="p-6 space-y-3">
+            <div className="p-4 sm:p-6 space-y-3">
               <div className="flex gap-3">
                 <span className="text-emerald-400">➜</span>
                 <span className="text-blue-400">~</span>
@@ -283,7 +283,7 @@ const App = () => {
 
       {/* ── Stats Bar ── */}
       <div className="border-y border-slate-800 bg-slate-900/40 py-6 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { value: '500+', label: 'Problems Solved', sub: 'LeetCode · HackerRank · CodeChef' },
             { value: '7.5',  label: 'CGPA',            sub: 'B.Tech CSE · Parul University' },
@@ -311,7 +311,7 @@ const App = () => {
             <div className="h-px bg-blue-500 w-12" />
             <h2 className="text-3xl font-bold text-white">Technical Arsenal</h2>
           </div>
-          <p className="text-slate-400 mb-12 ml-16 text-sm">Languages, frameworks, tools &amp; concepts</p>
+          <p className="text-slate-400 mb-12 ml-6 sm:ml-16 text-sm">Languages, frameworks, tools &amp; concepts</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {SKILLS.map(skill => (
               <div key={skill.name}
@@ -361,7 +361,7 @@ const App = () => {
 
             {/* LeetCode Card */}
             <a href="https://leetcode.com/u/Meen_Budha/" target="_blank" rel="noopener noreferrer"
-              className="group relative p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-orange-400/60 transition-all hover:-translate-y-1 overflow-hidden">
+              className="group relative p-5 sm:p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-orange-400/60 transition-all hover:-translate-y-1 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative flex items-start gap-5">
                 <div className="w-14 h-14 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0 group-hover:bg-orange-500/20 transition-colors">
@@ -375,7 +375,7 @@ const App = () => {
                     <ExternalLink className="w-4 h-4 text-slate-500 group-hover:text-orange-400 transition-colors" />
                   </div>
                   <p className="text-orange-400 text-sm font-mono mb-4">@meenbudha</p>
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
                     <div className="text-center p-3 bg-slate-950 rounded-xl border border-slate-800">
                       <div className="text-xl font-bold text-white">400+</div>
                       <div className="text-xs text-slate-500 mt-0.5">Solved</div>
@@ -395,7 +395,7 @@ const App = () => {
 
             {/* Codolio Card */}
             <a href="https://codolio.com/profile/meenbudha" target="_blank" rel="noopener noreferrer"
-              className="group relative p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-violet-400/60 transition-all hover:-translate-y-1 overflow-hidden">
+              className="group relative p-5 sm:p-8 bg-slate-900 border border-slate-800 rounded-2xl hover:border-violet-400/60 transition-all hover:-translate-y-1 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               {/* Header */}
               <div className="relative flex items-start gap-5 mb-5">
@@ -483,7 +483,7 @@ const App = () => {
                   className="group relative bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden hover:border-blue-500/40 transition-all">
                   {/* Top Banner */}
                   <div className={`h-3 w-full bg-gradient-to-r ${project.accent}`} />
-                  <div className="p-8">
+                  <div className="p-5 sm:p-8">
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6">
                       <div>
                         <div className="flex items-center gap-3 mb-1">
@@ -496,7 +496,7 @@ const App = () => {
                         </div>
                         <p className="text-blue-400 font-medium text-sm">{project.subtitle}</p>
                       </div>
-                      <div className="flex gap-3 text-slate-400 shrink-0">
+                      <div className="flex flex-wrap gap-2 sm:gap-3 text-slate-400 shrink-0">
                         <a href={project.github} target="_blank" rel="noopener noreferrer"
                           className="flex items-center gap-1.5 text-sm hover:text-white transition-colors border border-slate-700 hover:border-slate-500 px-3 py-1.5 rounded-lg">
                           <Github size={16} /> GitHub
@@ -548,7 +548,7 @@ const App = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Education Card */}
-            <div className="p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-blue-500/40 transition-all">
+            <div className="p-5 sm:p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-blue-500/40 transition-all">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center shrink-0">
                   <GraduationCap className="w-6 h-6 text-blue-400" />
@@ -573,7 +573,7 @@ const App = () => {
             </div>
 
             {/* Achievements Card */}
-            <div className="p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-emerald-500/40 transition-all">
+            <div className="p-5 sm:p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-emerald-500/40 transition-all">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-600/20 flex items-center justify-center shrink-0">
                   <Trophy className="w-6 h-6 text-emerald-400" />
@@ -596,7 +596,7 @@ const App = () => {
             </div>
 
             {/* Certifications */}
-            <div className="md:col-span-2 p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-violet-500/40 transition-all">
+            <div className="md:col-span-2 p-5 sm:p-8 bg-slate-950 border border-slate-800 rounded-2xl hover:border-violet-500/40 transition-all">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-violet-600/10 border border-violet-600/20 flex items-center justify-center shrink-0">
                   <Award className="w-6 h-6 text-violet-400" />
@@ -640,8 +640,8 @@ const App = () => {
           </p>
 
           <a href="mailto:meenbudha124@gmail.com"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-blue-500/20 mb-12">
-            <Mail className="w-5 h-5" /> meenbudha124@gmail.com
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-10 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-lg transition-all shadow-xl shadow-blue-500/20 mb-12 max-w-full overflow-hidden">
+            <Mail className="w-4 h-4 sm:w-5 sm:h-5" /> meenbudha124@gmail.com
           </a>
 
           {/* Social Icons */}

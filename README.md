@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal developer portfolio. This is a responsive, highly performant, and modern single-page application built using **React**, **Vite**, and **Tailwind CSS**. It showcases my projects, engineering skills, computer science certifications, and technical background as a Full-Stack Developer and DSA Enthusiast.
 
-🔗 **Live Link:** [meenbudha.dev](https://meen-budha.vercel.app) 
+🔗 **Live Link:**(https://meen-budha.vercel.app) 
 
 ---
 
