@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="mbb-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sleek Hexagonal outer ring -->
+  <polygon points="50,6 92,30 92,70 50,94 8,70 8,30" 
+           stroke="url(#mbb-grad)" 
+           stroke-width="5" 
+           stroke-linejoin="round" 
+           stroke-linecap="round" />
+
+  <!-- A subtle inner hexagon accent -->
+  <polygon points="50,15 84,34 84,66 50,85 16,66 16,34" 
+           stroke="url(#mbb-grad)" 
+           stroke-width="1.5" 
+           stroke-opacity="0.3"
+           stroke-linejoin="round" />
+
+  <!-- Left coding bracket `<` -->
+  <path d="M 28,40 L 20,50 L 28,60" 
+        stroke="url(#mbb-grad)" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Right coding bracket `>` -->
+  <path d="M 72,40 L 80,50 L 72,60" 
+        stroke="url(#mbb-grad)" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Monogram M and B in the middle -->
+  <!-- Letter M -->
+  <path d="M 34,60 L 34,40 L 43,51 L 52,40 L 52,60" 
+        stroke="url(#mbb-grad)" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+        
+  <!-- Letter B (sharing the vertical line at 52) -->
+  <path d="M 52,40 L 62,40 C 66.5,40 68,42 68,45 C 68,47 66,50 61,50 L 52,50 L 62,50 C 66.5,50 68,52 68,55 C 68,58 66.5,60 61,60 L 52,60" 
+        stroke="url(#mbb-grad)" 
+        stroke-width="4.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>
