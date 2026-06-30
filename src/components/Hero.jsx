@@ -28,18 +28,21 @@ const Hero = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Budha.</span>
           </h1>
           <p className="text-slate-300 font-semibold text-lg mb-4">Full-Stack Developer &amp; DSA Enthusiast</p>
-          <p className="text-slate-200 text-lg max-w-lg mb-6 leading-relaxed">
-            Computer Science undergraduate at <span className="text-white font-semibold">Parul University</span> specializing in full-stack development, DSA, and AI-powered systems. Passionate about scalable, high-impact software.
+          <p className="text-slate-400 text-xl max-w-lg mb-6 leading-relaxed">
+            Programming enthusiast who often thinks <br />
+            about developing new things for solving <br />
+            real world problems.
           </p>
 
-          <div className="flex flex-wrap gap-3 mb-8 text-base text-slate-200">
+
+          {/* <div className="flex flex-wrap gap-3 mb-8 text-base text-slate-200">
             <a href="tel:+917073241096" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
               <Phone className="w-4 h-4" /> +91 7073241096
             </a>
             <a href="mailto:meenbudha124@gmail.com" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
               <Mail className="w-4 h-4" /> meenbudha124@gmail.com
             </a>
-          </div>
+          </div> */}
 
           <div className="flex flex-wrap gap-4">
             <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/20 flex items-center gap-2">
