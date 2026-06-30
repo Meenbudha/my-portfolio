@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <section id="about" className="pt-32 pb-20 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-blue-500 font-mono mb-3 text-base flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

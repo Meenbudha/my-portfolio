@@ -23,9 +23,45 @@ const App = () => {
     return () => obs.disconnect();
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      Object.entries(sectionRefs.current).forEach(([id, el]) => {
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Entrance progress: 0 when top is at bottom of viewport, 1 when top is 30% from the bottom
+        const enterStart = windowHeight;
+        const enterEnd = windowHeight * 0.3;
+        let enterProgress = (enterStart - rect.top) / (enterStart - enterEnd);
+        enterProgress = Math.max(0, Math.min(1, enterProgress));
+        
+        // Exit progress: 1 when bottom is 20% from the top, 0 when bottom is at top
+        const exitStart = windowHeight * 0.2;
+        const exitEnd = 0;
+        let exitProgress = (rect.bottom - exitEnd) / (exitStart - exitEnd);
+        exitProgress = Math.max(0, Math.min(1, exitProgress));
+        
+        const progress = Math.min(enterProgress, exitProgress);
+        
+        el.style.opacity = progress;
+        const translateY = (1 - enterProgress) * 40;
+        const scale = 0.95 + progress * 0.05;
+        el.style.transform = `translateY(${translateY}px) scale(${scale})`;
+        el.style.transition = 'transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.2s cubic-bezier(0.25, 1, 0.5, 1)';
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    requestAnimationFrame(() => {
+      requestAnimationFrame(handleScroll);
+    });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const reg = (id) => (el) => { sectionRefs.current[id] = el; };
-  const fadeClass = (id) =>
-    `transition-all duration-700 ${visible[id] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`;
+  const fadeClass = (id) => "opacity-0 will-change-[transform,opacity]";
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-blue-500/30">

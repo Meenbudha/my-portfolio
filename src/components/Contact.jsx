@@ -16,7 +16,13 @@ const Contact = ({ fadeClass, reg }) => {
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ access_key: WEB3FORMS_KEY, subject: `[Portfolio] ${form.type} — ${form.subject}`, from_name: form.name, ...form, botcheck: '' }),
+        body: JSON.stringify({
+          ...form,
+          access_key: WEB3FORMS_KEY,
+          subject: `[Portfolio Contact] ${form.type} — ${form.subject}`,
+          from_name: `${form.name} (Portfolio)`,
+          botcheck: '',
+        }),
       });
       const data = await res.json();
       setFormStatus(data.success ? 'success' : 'error');
@@ -25,7 +31,7 @@ const Contact = ({ fadeClass, reg }) => {
 
   return (
     <footer id="contact" ref={reg('contact')} className={`py-20 px-6 border-t border-slate-900 ${fadeClass('contact')}`}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-blue-500 font-mono mb-4 text-sm flex items-center justify-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" /> Open to new opportunities

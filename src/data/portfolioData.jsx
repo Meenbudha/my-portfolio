@@ -32,27 +32,28 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
+    id: 'card-validator',
+    title: 'Luhn Card Validator',
+    desc: 'Web application that validates credit and debit card numbers in real-time using the Luhn Algorithm (Mod 10 Check).',
+    tech: ['html5', 'css3', 'javascript'],
+    github: 'https://github.com/Meenbudha/card-validator',
+    live: 'https://card-validator-meen.vercel.app',
+  },
+  {
     id: 'codemind',
     title: 'CodeMind AI',
-    subtitle: 'Algorithmic Complexity Reviewer',
-    year: '2026',
-    desc: 'A full-stack web application that analyzes source code in C, Java, or Python and instantly reports Big-O time & space complexity using static analysis and AI — delivering performance warnings and optimization suggestions every time.',
-    bullets: [
-      '3-tier architecture: React frontend → Node.js API gateway → Python/Flask ML service for clean separation of concerns.',
-      'Smart AI fallback chain: Google Gemini → AWS Bedrock Nova Micro → offline engine — results always delivered, zero downtime.',
-      'MD5-based global result caching eliminates redundant AI calls, significantly cutting inference costs.',
-      'Personalized analysis history per user, stored in MongoDB Atlas with JWT auth (7-day tokens, bcrypt 12 rounds).',
-      'Rate limiting (10 login / 5 register per IP), security headers, and production-grade hardening from day one.',
-      '4-workflow GitHub Actions CI/CD pipeline',
-    ],
-    tech: ['React', 'Node.js', 'Express.js', 'Python', 'Flask', 'MongoDB Atlas', 'Gemini API', 'AWS Bedrock', 'JWT', 'GitHub Actions', 'MD5 Caching', 'Render'],
-    category: 'MERN',
+    desc: 'A full-stack web application that analyzes source code complexity using AI and static analysis, Give you review of your code and how to improve it.',
+    tech: ['react', 'node', 'express', 'python', 'flask', 'mongodb', 'aws'],
     github: 'https://github.com/Meenbudha/code-complexity-reviewer',
     live: 'https://codemind-frontend.onrender.com',
-    accent: 'from-blue-600/30 to-violet-600/30',
-    borderColor: 'group-hover:border-blue-500/50',
-    glowColor: 'rgba(59, 130, 246, 0.15)',
-    iconBg: 'text-blue-400',
+  },
+  {
+    id: 'portfolio',
+    title: 'Personal Portfolio',
+    desc: 'Personal portfolio website created with React and Tailwind CSS.',
+    tech: ['tailwind', 'react', 'vite'],
+    github: 'https://github.com/Meenbudha/my-portfolio',
+    live: 'https://meen-budha.vercel.app',
   }
 ];
 

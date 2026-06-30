@@ -3,7 +3,7 @@ import { BookOpen, ExternalLink, Target, FileText, Building2 } from 'lucide-reac
 
 const CodingProfiles = ({ fadeClass, reg }) => (
   <section id="coding" ref={reg('coding')} className={`py-20 px-6 ${fadeClass('coding')}`}>
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="flex items-center gap-4 mb-3">
         <div className="h-px bg-orange-500 w-12" />
         <h2 className="text-3xl font-bold text-white">Coding Profiles</h2>

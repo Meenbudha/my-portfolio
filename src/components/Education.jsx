@@ -4,7 +4,7 @@ import { CERTIFICATIONS } from '../data/portfolioData';
 
 const Education = ({ fadeClass, reg }) => (
   <section id="education" ref={reg('education')} className={`py-20 px-6 bg-slate-900/30 ${fadeClass('education')}`}>
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <div className="flex items-center gap-4 mb-12">
         <div className="h-px bg-blue-500 w-12" />
         <h2 className="text-3xl font-bold text-white">Education &amp; Credentials</h2>

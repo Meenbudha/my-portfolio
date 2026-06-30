@@ -37,7 +37,7 @@ const Skills = ({ visible, fadeClass, reg }) => {
 
   return (
     <section id="skills" ref={reg('skills')} className={`py-20 px-6 bg-slate-900/30 ${fadeClass('skills')}`}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-2">
           <div className="h-px bg-blue-500 w-12" />
           <h2 className="text-3xl font-bold text-white">Technical Arsenal</h2>

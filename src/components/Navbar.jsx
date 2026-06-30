@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-4 left-0 right-0 z-50 flex flex-col items-center px-4 gap-2">
-      <nav className="w-full max-w-5xl bg-slate-950/70 backdrop-blur-md border border-slate-800/80 rounded-full shadow-2xl shadow-blue-500/5 px-6 h-14 flex items-center justify-between transition-all">
+      <nav className="w-full max-w-7xl bg-slate-950/70 backdrop-blur-md border border-slate-800/80 rounded-full shadow-2xl shadow-blue-500/5 px-6 h-14 flex items-center justify-between transition-all">
         <a href="#about" className="flex items-center gap-2 group">
           <img src="/logo.svg" alt="Meen Logo" className="w-7 h-7 transition-transform group-hover:scale-105" />
           <span className="font-mono font-bold text-lg tracking-tight text-cyan-400 group-hover:text-white transition-colors">&lt;Meen/&gt;</span>
