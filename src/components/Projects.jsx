@@ -108,7 +108,7 @@ const Projects = ({ fadeClass, reg }) => {
               <div className="h-px bg-blue-500 w-12" />
               <h2 className="text-3xl font-bold text-white">Featured Work</h2>
             </div>
-            <p className="text-slate-400 ml-16">Real projects with measurable impact</p>
+            <p className="text-slate-200 text-base ml-16">Real projects with measurable impact</p>
           </div>
         </div>
 
@@ -156,9 +156,9 @@ const Projects = ({ fadeClass, reg }) => {
                     })}
                   </div>
 
-                  <p className="text-slate-400 text-sm leading-relaxed mb-4">{project.desc}</p>
+                  <p className="text-slate-200 text-base leading-relaxed mb-4">{project.desc}</p>
 
-                  <div className="flex gap-4 text-slate-400">
+                  <div className="flex gap-4 text-slate-200">
                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                       <Github size={20} />
                     </a>

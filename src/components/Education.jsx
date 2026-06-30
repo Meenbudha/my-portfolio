@@ -22,7 +22,7 @@ const Education = ({ fadeClass, reg }) => (
               <p className="text-blue-400 text-sm font-medium">B.Tech — Computer Science &amp; Engineering</p>
             </div>
           </div>
-          <div className="space-y-3 text-sm text-slate-400">
+          <div className="space-y-3 text-base text-slate-200">
             <div className="flex items-center gap-2"><Star className="w-4 h-4 text-yellow-400" /><span className="text-white font-semibold">CGPA: 7.5 / 10</span></div>
             <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-slate-500" /> Vadodara, Gujarat</div>
             <div className="flex items-center gap-2"><Calendar className="w-4 h-4 text-slate-500" /> 2023 – 2027</div>
@@ -40,7 +40,7 @@ const Education = ({ fadeClass, reg }) => (
               <p className="text-emerald-400 text-sm font-medium">Competitive &amp; Open-Source</p>
             </div>
           </div>
-          <ul className="space-y-3 text-sm text-slate-300">
+          <ul className="space-y-3 text-base text-slate-200">
             <li className="flex items-start gap-2">
               <ChevronRight className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
               Contributed to open-source projects via <span className="text-white font-semibold">GSSoC '26</span>

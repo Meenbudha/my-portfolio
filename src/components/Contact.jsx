@@ -37,7 +37,7 @@ const Contact = ({ fadeClass, reg }) => {
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" /> Open to new opportunities
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's build something great.</h2>
-          <p className="text-slate-400 max-w-lg mx-auto text-base leading-relaxed">
+          <p className="text-slate-200 max-w-lg mx-auto text-lg leading-relaxed">
             Fill in the form below — I'll get back to you within 24 hours. Or reach out directly via the links below.
           </p>
         </div>
@@ -52,7 +52,7 @@ const Contact = ({ fadeClass, reg }) => {
                   <CheckCircle2 className="w-8 h-8 text-emerald-400" />
                 </div>
                 <h4 className="text-white font-bold text-lg mb-2">Message Sent!</h4>
-                <p className="text-slate-400 text-sm">Thanks for reaching out. I'll reply to <span className="text-blue-400">{form.email}</span> within 24 hours.</p>
+                <p className="text-slate-200 text-base">Thanks for reaching out. I'll reply to <span className="text-blue-400">{form.email}</span> within 24 hours.</p>
                 <button onClick={() => { setFormStatus('idle'); setForm({ name: '', email: '', type: 'Internship', subject: '', message: '' }); }}
                   className="mt-6 text-blue-400 text-sm hover:text-blue-300 transition-colors underline underline-offset-2">
                   Send another message
@@ -64,26 +64,26 @@ const Contact = ({ fadeClass, reg }) => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[['text','name','Full Name *','John Doe'],['email','email','Your Email *','you@company.com']].map(([type, name, label, ph]) => (
                     <div key={name}>
-                      <label className="block text-xs text-slate-400 font-medium mb-1.5 uppercase tracking-wider">{label}</label>
+                      <label className="block text-sm text-slate-300 font-semibold mb-1.5 uppercase tracking-wider">{label}</label>
                       <input type={type} name={name} required value={form[name]} onChange={handleChange} placeholder={ph}
                         className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors" />
                     </div>
                   ))}
                 </div>
                 <div>
-                  <label className="block text-xs text-slate-400 font-medium mb-1.5 uppercase tracking-wider">Opportunity Type *</label>
+                  <label className="block text-sm text-slate-300 font-semibold mb-1.5 uppercase tracking-wider">Opportunity Type *</label>
                   <select name="type" required value={form.type} onChange={handleChange}
                     className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors">
                     {['Internship','Full-time','Freelance','Collaboration','Other'].map(o => <option key={o}>{o}</option>)}
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs text-slate-400 font-medium mb-1.5 uppercase tracking-wider">Subject *</label>
+                  <label className="block text-sm text-slate-300 font-semibold mb-1.5 uppercase tracking-wider">Subject *</label>
                   <input type="text" name="subject" required value={form.subject} onChange={handleChange} placeholder="Backend Developer Internship at Acme Corp"
                     className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors" />
                 </div>
                 <div>
-                  <label className="block text-xs text-slate-400 font-medium mb-1.5 uppercase tracking-wider">Message *</label>
+                  <label className="block text-sm text-slate-300 font-semibold mb-1.5 uppercase tracking-wider">Message *</label>
                   <textarea name="message" required rows={5} value={form.message} onChange={handleChange} placeholder="Hi Meen, I came across your portfolio and..."
                     className="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors resize-none" />
                 </div>
@@ -114,7 +114,7 @@ const Contact = ({ fadeClass, reg }) => {
                     <div className={`w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center ${border} transition-colors`}>
                       <Icon className="w-4 h-4" />
                     </div>
-                    <span className="text-sm">{label}</span>
+                    <span className="text-base text-slate-200">{label}</span>
                   </a>
                 ))}
               </div>
@@ -122,7 +122,7 @@ const Contact = ({ fadeClass, reg }) => {
 
             <div className="p-6 bg-gradient-to-br from-blue-600/10 to-violet-600/10 border border-blue-500/20 rounded-2xl">
               <h4 className="text-white font-bold mb-1">Want my resume?</h4>
-              <p className="text-slate-400 text-sm mb-4">Download a PDF copy of my latest resume with all my experience and projects.</p>
+              <p className="text-slate-200 text-base mb-4">Download a PDF copy of my latest resume with all my experience and projects.</p>
               <a href="/Meen_Resume.pdf" download className="inline-flex items-center gap-2 bg-white text-slate-950 hover:bg-slate-100 font-semibold px-5 py-2.5 rounded-lg text-sm transition-all">
                 <Download className="w-4 h-4" /> Download Resume PDF
               </a>
@@ -130,7 +130,7 @@ const Contact = ({ fadeClass, reg }) => {
 
             <div className="flex items-center gap-3 p-4 bg-emerald-500/5 border border-emerald-500/20 rounded-xl">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-              <p className="text-emerald-400 text-sm font-medium">Typically responds within 24 hours</p>
+              <p className="text-emerald-400 text-base font-semibold">Typically responds within 24 hours</p>
             </div>
           </div>
         </div>

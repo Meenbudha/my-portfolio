@@ -28,11 +28,11 @@ const Hero = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Budha.</span>
           </h1>
           <p className="text-slate-300 font-semibold text-lg mb-4">Full-Stack Developer &amp; DSA Enthusiast</p>
-          <p className="text-slate-400 text-base max-w-lg mb-6 leading-relaxed">
+          <p className="text-slate-200 text-lg max-w-lg mb-6 leading-relaxed">
             Computer Science undergraduate at <span className="text-white font-semibold">Parul University</span> specializing in full-stack development, DSA, and AI-powered systems. Passionate about scalable, high-impact software.
           </p>
 
-          <div className="flex flex-wrap gap-3 mb-8 text-sm text-slate-400">
+          <div className="flex flex-wrap gap-3 mb-8 text-base text-slate-200">
             <a href="tel:+917073241096" className="flex items-center gap-1.5 hover:text-blue-400 transition-colors">
               <Phone className="w-4 h-4" /> +91 7073241096
             </a>

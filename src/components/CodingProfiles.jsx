@@ -8,7 +8,7 @@ const CodingProfiles = ({ fadeClass, reg }) => (
         <div className="h-px bg-orange-500 w-12" />
         <h2 className="text-3xl font-bold text-white">Coding Profiles</h2>
       </div>
-      <p className="text-slate-400 mb-12 ml-16 text-sm">500+ problems solved across platforms</p>
+      <p className="text-slate-200 mb-12 ml-16 text-base">500+ problems solved across platforms</p>
 
       <div className="grid sm:grid-cols-2 gap-6">
         {/* LeetCode */}
@@ -55,7 +55,7 @@ const CodingProfiles = ({ fadeClass, reg }) => (
               <p className="text-violet-400 text-sm font-mono">@meenbudha</p>
             </div>
           </div>
-          <p className="relative text-slate-400 text-sm leading-relaxed mb-5">
+          <p className="relative text-slate-200 text-base leading-relaxed mb-5">
             All-in-one coding prep &amp; portfolio tool — smart coding diary meets interview kit. Replaces scattered spreadsheets with one structured dashboard.
           </p>
           <div className="relative flex flex-wrap gap-2 mb-5">

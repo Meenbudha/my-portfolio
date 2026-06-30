@@ -42,7 +42,7 @@ const Skills = ({ visible, fadeClass, reg }) => {
           <div className="h-px bg-blue-500 w-12" />
           <h2 className="text-3xl font-bold text-white">Technical Arsenal</h2>
         </div>
-        <p className="text-slate-400 mb-10 ml-16 text-sm">Languages, frameworks, tools &amp; concepts</p>
+        <p className="text-slate-200 mb-10 ml-16 text-base">Languages, frameworks, tools &amp; concepts</p>
 
         {/* Featured 3 */}
         <div className="grid sm:grid-cols-3 gap-5 mb-8">
@@ -54,7 +54,7 @@ const Skills = ({ visible, fadeClass, reg }) => {
                 <span className="text-[10px] uppercase tracking-widest text-slate-500 border border-slate-700 px-2 py-0.5 rounded-full">{skill.category}</span>
               </div>
               <h3 className={`text-white font-bold text-xl mb-1 group-hover:${skill.color} transition-colors`}>{skill.name}</h3>
-              <p className="text-slate-500 text-xs leading-relaxed mb-4">{skill.tagline}</p>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4">{skill.tagline}</p>
               <div className="mt-auto">
                 <div className="flex justify-between text-[10px] text-slate-500 mb-1">
                   <span>Proficiency</span><span>{skill.level}%</span>
@@ -81,7 +81,7 @@ const Skills = ({ visible, fadeClass, reg }) => {
         </div>
 
         <button onClick={() => setShowAllSkills(s => !s)}
-          className="group flex items-center gap-2 mx-auto px-6 py-2.5 rounded-full border border-slate-700 hover:border-blue-500/60 hover:bg-blue-500/5 text-slate-400 hover:text-blue-400 text-sm font-medium transition-all">
+          className="group flex items-center gap-2 mx-auto px-6 py-2.5 rounded-full border border-slate-600 hover:border-blue-500/60 hover:bg-blue-500/5 text-slate-200 hover:text-blue-400 text-base font-semibold transition-all">
           <Zap className="w-4 h-4 group-hover:text-yellow-400 transition-colors" />
           {showAllSkills ? `Hide extended skills` : `Show ${MORE_SKILLS.length} more skills`}
           <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${showAllSkills ? 'rotate-90' : 'rotate-0'}`} />
