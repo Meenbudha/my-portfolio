@@ -36,8 +36,8 @@ export const PROJECTS = [
     title: 'Luhn Card Validator',
     desc: 'Web application that validates credit and debit card numbers in real-time using the Luhn Algorithm (Mod 10 Check).',
     tech: ['html5', 'css3', 'javascript'],
-    github: 'https://github.com/Meenbudha/card-validator',
-    live: 'https://card-validator-meen.vercel.app',
+    github: 'https://github.com/Meenbudha/Mini-Project-On-Luhn-s-Algorithm',
+    live: 'https://card-validator-five.vercel.app',
   },
   {
     id: 'codemind',
